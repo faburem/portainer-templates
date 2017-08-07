@@ -4,7 +4,7 @@
     "description": "open source time tracking for small companies",
     "categories": ["project-management"],
     "platform": "linux",
-    "logo": "https://github.com/faburem/titra/raw/master/public/favicons/favicon-32x32.png",
+    "logo": "https://github.com/faburem/titra/raw/master/public/favicons/android-chrome-192x192.png",
     "image": "kromit/titra:latest",
     "ports": [
       "3000/tcp"
@@ -41,6 +41,70 @@
        }
      ]
    },
+   {
+     "title": "Rocket.chat",
+     "description": "Have your own Slack like online chat, built with Meteor.",
+     "categories": ["messaging"],
+     "platform": "linux",
+     "logo": "https://github.com/RocketChat/Rocket.Chat/raw/develop/public/images/logo/android-chrome-192x192.png",
+     "image": "rocketchat:rocket.chat:latest",
+     "ports": [
+       "3000/tcp"
+      ],
+     "env": [
+        {
+          "name": "ROOT_URL",
+          "label": "Root URL"
+        },
+        {
+          "name": "MONGO_URL",
+          "label": "Mongodb URL"
+        }
+      ]
+    },
+    {
+      "title": "Pasteboard",
+      "description": "Clipboard and drag & drop image sharing web app",
+      "categories": ["storage"],
+      "platform": "linux",
+      "logo": "https://github.com/JoelBesada/pasteboard/raw/master/public/images/splash-image.png",
+      "image": "anthodingo/docker-pasteboard:latest",
+      "ports": [
+        "4000/tcp"
+       ],
+       "volumes": [
+         "/pasteboard/public/storage"
+       ],
+     },
+     {
+       "title": "Privatebin",
+       "description": "PrivateBin is a minimalist, open source online pastebin where the server has zero knowledge of pasted data.",
+       "categories": ["storage"],
+       "platform": "linux",
+       "logo": "https://github.com/PrivateBin/PrivateBin/raw/master/img/android-chrome-192x192.png",
+       "image": "wonderfall/privatebin:latest",
+       "ports": [
+         "8888/tcp"
+        ],
+        "volumes": [
+          "/privatebin/data"
+        ],
+      },
+      {
+        "title": "Dokuwiki",
+        "description": "DokuWiki is a simple to use and highly versatile Open Source wiki software that doesn't require a database.",
+        "categories": ["wiki"],
+        "platform": "linux",
+        "logo": "https://www.dokuwiki.org/lib/tpl/dokuwiki/images/logo.png",
+        "image": "moritanosuke/dokuwiki-docker:latest",
+        "ports": [
+          "80/tcp"
+         ],
+         "volumes": [
+           "/dokuwiki-data",
+           "/dokuwiki-conf"
+         ],
+       },
 {
     "title": "Registry",
     "description": "Docker image registry",
