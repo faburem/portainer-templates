@@ -1,0 +1,44 @@
+[
+  {
+    "title": "titra",
+    "description": "open source time tracking for small companies",
+    "categories": ["project-management"],
+    "platform": "linux",
+    "logo": "https://github.com/faburem/titra/blob/master/public/favicons/favicon-32x32.png",
+    "image": "kromit/titra:latest",
+    "ports": [
+      "3000/tcp"
+    ],
+    "env": [
+      {
+        "name": "ROOT_URL",
+        "label": "Root URL"
+      },
+      {
+        "name": "MONGO_URL",
+        "label": "Mongodb URL"
+      }
+    ]
+  },
+  {
+    "title": "wekan",
+    "description": "open source time tracking for small companies",
+    "categories": ["project-management"],
+    "platform": "linux",
+    "logo": "https://github.com/wekan/wekan/raw/devel/public/wekan-favicon.png",
+    "image": "wekanteam:wekan:latest",
+    "ports": [
+      "3000/tcp"
+     ],
+    "env": [
+       {
+         "name": "ROOT_URL",
+         "label": "Root URL"
+       },
+       {
+         "name": "MONGO_URL",
+         "label": "Mongodb URL"
+       }
+     ]
+   }
+]
