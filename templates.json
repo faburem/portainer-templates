@@ -18,7 +18,8 @@
         "name": "MONGO_URL",
         "label": "Mongodb URL"
       }
-    ]
+    ],
+    "restart_policy": "always"
   },
   {
     "title": "wekan",
@@ -39,7 +40,8 @@
          "name": "MONGO_URL",
          "label": "Mongodb URL"
        }
-     ]
+     ],
+     "restart_policy": "always"
    },
    {
      "title": "Rocket.chat",
@@ -60,7 +62,8 @@
           "name": "MONGO_URL",
           "label": "Mongodb URL"
         }
-      ]
+      ],
+      "restart_policy": "always"
     },
     {
       "title": "Pasteboard",
@@ -74,7 +77,8 @@
        ],
        "volumes": [
          "/pasteboard/public/storage"
-       ]
+       ],
+       "restart_policy": "always"
      },
      {
        "title": "Privatebin",
@@ -88,7 +92,8 @@
         ],
         "volumes": [
           "/privatebin/data"
-        ]
+        ],
+        "restart_policy": "always"
       },
       {
         "title": "Dokuwiki",
@@ -103,7 +108,8 @@
          "volumes": [
            "/dokuwiki-data",
            "/dokuwiki-conf"
-         ]
+         ],
+         "restart_policy": "always"
        },
 {
     "title": "Registry",
