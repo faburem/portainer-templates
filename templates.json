@@ -74,7 +74,7 @@
        ],
        "volumes": [
          "/pasteboard/public/storage"
-       ],
+       ]
      },
      {
        "title": "Privatebin",
@@ -88,7 +88,7 @@
         ],
         "volumes": [
           "/privatebin/data"
-        ],
+        ]
       },
       {
         "title": "Dokuwiki",
@@ -103,7 +103,7 @@
          "volumes": [
            "/dokuwiki-data",
            "/dokuwiki-conf"
-         ],
+         ]
        },
 {
     "title": "Registry",
