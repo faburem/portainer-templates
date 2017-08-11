@@ -101,13 +101,14 @@
         "categories": ["wiki"],
         "platform": "linux",
         "logo": "https://www.dokuwiki.org/lib/tpl/dokuwiki/images/logo.png",
-        "image": "moritanosuke/dokuwiki-docker:latest",
+        "image": "kromit/dokuwiki-docker:latest",
         "ports": [
           "80/tcp"
          ],
          "volumes": [
            "/dokuwiki-data",
-           "/dokuwiki-conf"
+           "/dokuwiki-conf",
+	   "/dokuwiki-plugins"
          ],
          "restart_policy": "always"
        },
