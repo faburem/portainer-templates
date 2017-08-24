@@ -101,7 +101,7 @@
         "categories": ["wiki"],
         "platform": "linux",
         "logo": "https://www.dokuwiki.org/lib/tpl/dokuwiki/images/logo.png",
-        "image": "kromit/dokuwiki-docker:latest",
+        "image": "moritanosuke/dokuwiki-docker:latest",
         "ports": [
           "80/tcp"
          ],
