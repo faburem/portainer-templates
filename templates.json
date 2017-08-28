@@ -133,7 +133,7 @@
           "description": "CryptPad is the zero knowledge realtime collaborative editor.",
           "categories": ["storage"],
           "platform": "linux",
-          "logo": "https://github.com/xwiki-labs/cryptpad/raw/master/customize.dist/images/logo_white.png",
+          "logo": "https://github.com/xwiki-labs/cryptpad/raw/master/customize.dist/main-favicon.png",
           "image": "dalareo/cryptpad:latest",
           "ports": [
             "3000/tcp"
