@@ -112,6 +112,22 @@
          ],
          "restart_policy": "always"
        },
+       {
+         "title": "droppy",
+         "description": "droppy is a self-hosted file storage server with a web interface and capabilities to edit files and view media directly in the browser.",
+         "categories": ["storage"],
+         "platform": "linux",
+         "logo": "https://github.com/silverwind/droppy/raw/master/client/images/logo192.png",
+         "image": "silverwind/droppy:latest",
+         "ports": [
+           "8989/tcp"
+          ],
+          "volumes": [
+            "/config",
+            "/files"
+          ],
+          "restart_policy": "always"
+        },
 {
     "title": "Registry",
     "description": "Docker image registry",
