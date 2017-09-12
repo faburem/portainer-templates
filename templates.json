@@ -149,7 +149,7 @@
           "description": "Git with a cup of tea (forked from gogs)",
           "categories": ["git"],
           "platform": "linux",
-          "logo": "https://github.com/go-gitea/gitea/raw/master/assets/logo.svg",
+          "logo": "https://github.com/go-gitea/gitea/raw/master/public/img/gitea-sm.png",
           "image": "gitea/gitea:latest",
           "ports": [
             "3000/tcp",
