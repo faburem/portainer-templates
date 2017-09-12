@@ -144,6 +144,22 @@
            ],
            "restart_policy": "always"
          },
+        {   
+          "title": "gitea",
+          "description": "Git with a cup of tea (forked from gogs)",
+          "categories": ["git"],
+          "platform": "linux",
+          "logo": "https://github.com/go-gitea/gitea/raw/master/assets/logo.svg",
+          "image": "gitea/gitea:latest",
+          "ports": [
+            "3000/tcp",
+	    "22/tcp"
+           ],  
+           "volumes": [
+             "/data"
+           ],  
+           "restart_policy": "always"
+         },  
 {
     "title": "Registry",
     "description": "Docker image registry",
