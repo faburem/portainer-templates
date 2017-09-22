@@ -147,7 +147,7 @@
         {   
           "title": "gitea",
           "description": "Git with a cup of tea (forked from gogs)",
-          "categories": ["git"],
+          "categories": ["development"],
           "platform": "linux",
           "logo": "https://github.com/go-gitea/gitea/raw/master/public/img/gitea-sm.png",
           "image": "gitea/gitea:latest",
@@ -160,6 +160,23 @@
            ],  
            "restart_policy": "always"
          },  
+        {   
+          "title": "traefik",
+          "description": "Træfɪk is a modern HTTP reverse proxy and load balancer made to deploy microservices with ease.",
+          "categories": ["docker"],
+          "platform": "linux",
+          "logo": "https://github.com/containous/traefik/raw/master/docs/img/traefik.logo.png",
+          "image": "traefik:latest",
+          "ports": [
+            "8080/tcp",
+            "80/tcp",
+	    "443/tcp"
+           ],  
+           "volumes": [
+             "/var/run/docker.sock"
+           ],  
+           "restart_policy": "always"
+         }, 
 {
     "title": "Registry",
     "description": "Docker image registry",
