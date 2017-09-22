@@ -173,7 +173,8 @@
 	    "443/tcp"
            ],  
            "volumes": [
-             "/var/run/docker.sock"
+             "/var/run/docker.sock",
+	     "/etc/traefik/traefik.toml"
            ],  
            "restart_policy": "always"
          }, 
