@@ -183,7 +183,7 @@
           "description": "Automatically update running Docker containers.",
           "categories": ["docker"],
           "platform": "linux",
-          "logo": "https://cdn.pixabay.com/photo/2013/04/01/21/30/lookout-tower-99153_960_720.png",
+          "logo": "https://github.com/faburem/portainer-templates/raw/master/images/watchtower.png",
           "image": "v2tec/watchtower:latest",
            "volumes": ["/var/run/docker.sock"],  
            "restart_policy": "always"
