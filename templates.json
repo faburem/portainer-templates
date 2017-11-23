@@ -1,6 +1,7 @@
 [
   {
-    "title": "titra",
+    "type": "container",
+	 "title": "titra",
     "description": "open source time tracking for small companies",
     "categories": ["project-management"],
     "platform": "linux",
@@ -22,7 +23,8 @@
     "restart_policy": "always"
   },
   {
-    "title": "wekan",
+    "type": "container",
+	 "title": "wekan",
     "description": "open source time tracking for small companies",
     "categories": ["project-management"],
     "platform": "linux",
@@ -44,7 +46,8 @@
      "restart_policy": "always"
    },
    {
-     "title": "Rocket.chat",
+     "type": "container",
+	 "title": "Rocket.chat",
      "description": "Have your own Slack like online chat, built with Meteor.",
      "categories": ["messaging"],
      "platform": "linux",
@@ -66,7 +69,8 @@
       "restart_policy": "always"
     },
     {
-      "title": "Pasteboard",
+      "type": "container",
+	 "title": "Pasteboard",
       "description": "Clipboard and drag & drop image sharing web app",
       "categories": ["storage"],
       "platform": "linux",
@@ -81,7 +85,8 @@
        "restart_policy": "always"
      },
      {
-       "title": "Privatebin",
+       "type": "container",
+	 "title": "Privatebin",
        "description": "PrivateBin is a minimalist, open source online pastebin where the server has zero knowledge of pasted data.",
        "categories": ["storage"],
        "platform": "linux",
@@ -96,7 +101,8 @@
         "restart_policy": "always"
       },
       {
-        "title": "Dokuwiki",
+        "type": "container",
+	 "title": "Dokuwiki",
         "description": "DokuWiki is a simple to use and highly versatile Open Source wiki software that doesn't require a database.",
         "categories": ["wiki"],
         "platform": "linux",
@@ -113,7 +119,8 @@
          "restart_policy": "always"
        },
        {
-         "title": "droppy",
+         "type": "container",
+	 "title": "droppy",
          "description": "droppy is a self-hosted file storage server with a web interface and capabilities to edit files and view media directly in the browser.",
          "categories": ["storage"],
          "platform": "linux",
@@ -129,7 +136,8 @@
           "restart_policy": "always"
         },
         {
-          "title": "cryptpad",
+          "type": "container",
+	 "title": "cryptpad",
           "description": "CryptPad is the zero knowledge realtime collaborative editor.",
           "categories": ["storage"],
           "platform": "linux",
@@ -144,8 +152,9 @@
            ],
            "restart_policy": "always"
          },
-        {   
-          "title": "gitea",
+        {
+          "type": "container",
+	 "title": "gitea",
           "description": "Git with a cup of tea (forked from gogs)",
           "categories": ["development"],
           "platform": "linux",
@@ -154,14 +163,15 @@
           "ports": [
             "3000/tcp",
 	    "22/tcp"
-           ],  
+           ],
            "volumes": [
              "/data"
-           ],  
+           ],
            "restart_policy": "always"
-         },  
-        {   
-          "title": "traefik",
+         },
+        {
+          "type": "container",
+	 "title": "traefik",
           "description": "Træfɪk is a modern HTTP reverse proxy and load balancer made to deploy microservices with ease.",
           "categories": ["docker"],
           "platform": "linux",
@@ -171,25 +181,27 @@
             "8080/tcp",
             "80/tcp",
 	    "443/tcp"
-           ],  
+           ],
            "volumes": [
              "/var/run/docker.sock",
 	     "/etc/traefik/traefik.toml"
-           ],  
+           ],
            "restart_policy": "always"
-         }, 
-        {   
-          "title": "watchtower",
+         },
+        {
+          "type": "container",
+	 "title": "watchtower",
           "description": "Automatically update running Docker containers.",
           "categories": ["docker"],
           "platform": "linux",
           "logo": "https://github.com/faburem/portainer-templates/raw/master/images/watchtower.png",
           "image": "v2tec/watchtower:latest",
-           "volumes": ["/var/run/docker.sock"],  
+           "volumes": ["/var/run/docker.sock"],
            "restart_policy": "always"
-         }, 
+         },
 {
-    "title": "Registry",
+    "type": "container",
+	 "title": "Registry",
     "description": "Docker image registry",
     "categories": ["docker"],
     "platform": "linux",
@@ -201,7 +213,8 @@
     "volumes": ["/var/lib/registry"]
   },
   {
-    "title": "Nginx",
+    "type": "container",
+	 "title": "Nginx",
     "description": "High performance web server",
     "categories": ["webserver"],
     "platform": "linux",
@@ -214,7 +227,8 @@
     "volumes": ["/etc/nginx", "/var/www/html"]
   },
   {
-    "title": "Httpd",
+    "type": "container",
+	 "title": "Httpd",
     "description": "Open-source HTTP server",
     "categories": ["webserver"],
     "platform": "linux",
@@ -226,7 +240,8 @@
     "volumes": ["/usr/local/apache2/htdocs/"]
   },
   {
-    "title": "Caddy",
+    "type": "container",
+	 "title": "Caddy",
     "description": "HTTP/2 web server with automatic HTTPS",
     "categories": ["webserver"],
     "platform": "linux",
@@ -238,7 +253,8 @@
     "volumes": ["/root/.caddy"]
   },
   {
-    "title": "MySQL",
+    "type": "container",
+	 "title": "MySQL",
     "description": "The most popular open-source database",
     "categories": ["database"],
     "platform": "linux",
@@ -256,7 +272,8 @@
     "volumes": ["/var/lib/mysql"]
   },
   {
-    "title": "MariaDB",
+    "type": "container",
+	 "title": "MariaDB",
     "description": "Performance beyond MySQL",
     "categories": ["database"],
     "platform": "linux",
@@ -274,7 +291,8 @@
     "volumes": ["/var/lib/mysql"]
   },
   {
-    "title": "PostgreSQL",
+    "type": "container",
+	 "title": "PostgreSQL",
     "description": "The most advanced open-source database",
     "categories": ["database"],
     "platform": "linux",
@@ -296,7 +314,8 @@
     "volumes": ["/var/lib/postgresql/data"]
   },
   {
-    "title": "Mongo",
+    "type": "container",
+	 "title": "Mongo",
     "description": "Open-source document-oriented database",
     "categories": ["database"],
     "platform": "linux",
@@ -308,7 +327,8 @@
     "volumes": ["/data/db"]
   },
   {
-    "title": "CockroachDB",
+    "type": "container",
+	 "title": "CockroachDB",
     "description": "An open-source, survivable, strongly consistent, scale-out SQL database",
     "categories": ["database"],
     "platform": "linux",
@@ -322,7 +342,8 @@
     "command": "start --insecure"
   },
   {
-    "title": "CrateDB",
+    "type": "container",
+	 "title": "CrateDB",
     "description": "An open-source distributed SQL database",
     "categories": ["database"],
     "platform": "linux",
@@ -335,7 +356,8 @@
     "volumes": ["/data"]
   },
   {
-    "title": "Elasticsearch",
+    "type": "container",
+	 "title": "Elasticsearch",
     "description": "Open-source search and analytics engine",
     "categories": ["database"],
     "platform": "linux",
@@ -348,7 +370,8 @@
     "volumes": ["/usr/share/elasticsearch/data"]
   },
   {
-    "title": "Minio",
+    "type": "container",
+	 "title": "Minio",
     "description": "A distributed object storage server built for cloud applications and devops",
     "categories": ["storage"],
     "platform": "linux",
@@ -371,7 +394,8 @@
     "command": "server /export"
   },
   {
-    "title": "Scality S3",
+    "type": "container",
+	 "title": "Scality S3",
     "description": "Standalone AWS S3 protocol server",
     "categories": ["storage"],
     "platform": "linux",
@@ -393,7 +417,8 @@
     "volumes": ["/usr/src/app/localData", "/usr/src/app/localMetadata"]
   },
   {
-    "title": "SQL Server",
+    "type": "container",
+	 "title": "SQL Server",
     "description": "Microsoft SQL Server on Linux",
     "categories": ["database"],
     "platform": "linux",
@@ -415,7 +440,8 @@
     ]
   },
   {
-    "title": "SQL Server",
+    "type": "container",
+	 "title": "SQL Server",
     "description": "Microsoft SQL Server for Windows containers",
     "categories": ["database"],
     "platform": "windows",
@@ -438,7 +464,8 @@
     "volumes": ["C:/temp/"]
   },
   {
-    "title": "SQL Server Express",
+    "type": "container",
+	 "title": "SQL Server Express",
     "description": "Microsoft SQL Server Express for Windows containers",
     "categories": ["database"],
     "platform": "windows",
@@ -461,7 +488,8 @@
     "volumes": ["C:/temp/"]
   },
   {
-    "title": "Solr",
+    "type": "container",
+	 "title": "Solr",
     "description": "Open-source enterprise search platform",
     "categories": ["search-engine"],
     "platform": "linux",
@@ -473,7 +501,8 @@
     "volumes": ["/opt/solr/mydata"]
   },
   {
-    "title": "Redis",
+    "type": "container",
+	 "title": "Redis",
     "description": "Open-source in-memory data structure store",
     "categories": ["database"],
     "platform": "linux",
@@ -485,7 +514,8 @@
     "volumes": ["/data"]
   },
   {
-    "title": "RabbitMQ",
+    "type": "container",
+	 "title": "RabbitMQ",
     "description": "Highly reliable enterprise messaging system",
     "categories": ["messaging"],
     "platform": "linux",
@@ -498,7 +528,8 @@
     "volumes": ["/var/lib/rabbitmq"]
   },
   {
-    "title": "Plesk",
+    "type": "container",
+	 "title": "Plesk",
     "description": "WebOps platform and hosting control panel",
     "categories": ["CMS"],
     "platform": "linux",
@@ -510,7 +541,8 @@
     ]
   },
   {
-    "title": "WordPress",
+    "type": "container",
+	 "title": "WordPress",
     "description": "A free and open-source CMS",
     "categories": ["CMS"],
     "platform": "linux",
@@ -533,7 +565,8 @@
     "volumes": ["/var/www/html"]
   },
   {
-    "title": "Joomla",
+    "type": "container",
+	 "title": "Joomla",
     "description": "Another free and open-source CMS",
     "categories": ["CMS"],
     "platform": "linux",
@@ -556,7 +589,8 @@
     "volumes": ["/var/www/html"]
   },
   {
-    "title": "Drupal",
+    "type": "container",
+	 "title": "Drupal",
     "description": "Open-source content management framework",
     "categories": ["CMS"],
     "platform": "linux",
@@ -568,7 +602,8 @@
     "volumes": ["/var/www/html"]
   },
   {
-    "title": "Plone",
+    "type": "container",
+	 "title": "Plone",
     "description": "A free and open-source CMS built on top of Zope",
     "categories": ["CMS"],
     "platform": "linux",
@@ -580,7 +615,8 @@
     "volumes": ["/data"]
   },
   {
-    "title": "Magento 2",
+    "type": "container",
+	 "title": "Magento 2",
     "description": "Open-source e-commerce platform",
     "categories": ["CMS"],
     "platform": "linux",
@@ -594,7 +630,8 @@
     "volumes": ["/var/www/html/"]
   },
   {
-    "title": "Mautic",
+    "type": "container",
+	 "title": "Mautic",
     "description": "Open-source marketing automation platform",
     "categories": ["marketing"],
     "platform": "linux",
@@ -617,7 +654,8 @@
     "volumes": ["/var/www/html"]
   },
   {
-    "title": "Wowza",
+    "type": "container",
+	 "title": "Wowza",
     "description": "Streaming media server",
     "categories": ["streaming"],
     "platform": "linux",
@@ -643,7 +681,8 @@
     "volumes": ["/var/lib/wowza"]
   },
   {
-    "title": "Jenkins",
+    "type": "container",
+	 "title": "Jenkins",
     "description": "Open-source continuous integration tool",
     "categories": ["continuous-integration"],
     "platform": "linux",
@@ -662,7 +701,8 @@
     "volumes": ["/var/jenkins_home"]
   },
   {
-    "title": "Redmine",
+    "type": "container",
+	 "title": "Redmine",
     "description": "Open-source project management tool",
     "categories": ["project-management"],
     "platform": "linux",
@@ -674,7 +714,8 @@
     "volumes": ["/usr/src/redmine/files"]
   },
   {
-    "title": "Odoo",
+    "type": "container",
+	 "title": "Odoo",
     "description": "Open-source business apps",
     "categories": ["project-management"],
     "platform": "linux",
@@ -701,7 +742,8 @@
     "volumes": ["/var/lib/odoo", "/mnt/extra-addons"]
   },
   {
-    "title": "Urbackup",
+    "type": "container",
+	 "title": "Urbackup",
     "description": "Open-source network backup",
     "categories": ["backup"],
     "platform": "linux",
@@ -714,7 +756,8 @@
     "volumes": ["/var/urbackup"]
   },
   {
-    "title": "CommandBox",
+    "type": "container",
+	 "title": "CommandBox",
     "description": "ColdFusion (CFML) CLI",
     "categories": ["development"],
     "platform": "linux",
@@ -731,7 +774,8 @@
     ]
   },
   {
-    "title": "ContentBox",
+    "type": "container",
+	 "title": "ContentBox",
     "description": "Open-source modular CMS",
     "categories": ["CMS"],
     "platform": "linux",
