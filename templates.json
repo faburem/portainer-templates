@@ -1,6 +1,37 @@
 [
   {
     "type": "container",
+   "title": "helpy",
+    "description": "Helpy is a modern, mobile first helpdesk solution written in Ruby on Rails 4.2 and released under the MIT license. The goal of Helpy is to provide a full featured open source helpdesk platform.",
+    "categories": ["project-management","delopment"],
+    "platform": "linux",
+    "logo": "https://github.com/helpyio/helpy/raw/master/app/assets/images/logo.png",
+    "image": "helpy/helpy:latest",
+    "ports": [
+      "8080/tcp"
+    ],
+    "env": [
+      {
+        "name": "POSTGRES_DB",
+        "label": "Postgres database"
+      },
+      {
+        "name": "POSTGRES_USER",
+        "label": "Postgres user"
+      },
+      {
+        "name": "POSTGRES_PASSWORD",
+        "label": "Postgres password"
+      },
+      {
+        "name": "SECRET_KEY_BASE",
+        "label": "Postgres user"
+      }
+    ],
+    "restart_policy": "always"
+  },
+  {
+    "type": "container",
 	 "title": "titra",
     "description": "open source time tracking for small companies",
     "categories": ["project-management"],
